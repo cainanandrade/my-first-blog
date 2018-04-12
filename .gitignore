@@ -4,5 +4,6 @@ __pycache__
 myvenv
 db.sqlite3
 informacoes.txt
+/bootstrap-4.1.0
 /static
 .DS_Store
