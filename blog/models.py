@@ -5,6 +5,8 @@ from django.utils import timezone
 class Post(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
+    #o text_resumo será um resumo da postagem, exibido no site principal (post_list). O conteúdo completo será exibido no post_detail
+    #text_resumo = models.TextField(max_length=300)
     text = models.TextField()
     created_date = models.DateTimeField(
             default=timezone.now)
